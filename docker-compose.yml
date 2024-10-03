@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    container_name: postgres_noeve
+    user: postgres
+    environment:
+      POSTGRES_DB: noevedb
+      POSTGRES_PASSWORD: 1234
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"

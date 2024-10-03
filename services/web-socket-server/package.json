@@ -1,0 +1,36 @@
+{
+  "name": "web-socket-server",
+  "version": "0.1.0",
+  "description": "Web Socket Server",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc",
+    "start": "tsc && node ./dist/src/index.js"
+  },
+  "keywords": [
+    "web-socket",
+    "server"
+  ],
+  "author": "Eloy Gustavo Ye Luo",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.11.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/ws": "^8.5.12",
+    "eslint": "^9.11.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "3.3.3",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.6.0",
+    "vitest": "^2.1.1"
+  },
+  "dependencies": {
+    "postgres": "^3.4.4",
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.8"
+  }
+}
